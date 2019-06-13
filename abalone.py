@@ -30,12 +30,13 @@ dataset = read_csv(filename, names=names)
 # shape
 print(dataset.shape)
 
-firstColumn = read_csv(filename)
-df = pd.DataFrame(firstColumn)
-df2=df.replace('M', 0)
-df3=df2.replace('F', 1)
-df4=df3.replace('I', 2)
-df4.to_csv("abalone.data.csv")
+# sex field to numeric
+# firstColumn = read_csv(filename)
+# df = pd.DataFrame(firstColumn)
+# df2=df.replace('M', 0)
+# df3=df2.replace('F', 1)
+# df4=df3.replace('I', 2)
+# df4.to_csv("abalone.data.csv")
 
 # head
 print(dataset.head(20))
